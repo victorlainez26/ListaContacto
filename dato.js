@@ -2,19 +2,32 @@
 let listaContactos;
 
 listaContactos = [
-    {NombreApellido: "Mario Lopez"}, 
-    {NombreApellido: "Juan Perez"},
-    {NombreApellido: "Hugo Correa"}
+    {
+        id: "0801199518131" ,
+        nombres:"Victor Alejandro",
+        apellidos: "Lainez Vasquez",
+        telefono: 89891920,
+        ubicaciones:{ 
+            ciudad: "Tegucigalpa",
+            direccion: "Col.Miraflores"}
+        
+    }
 
 ]
 
-function IngresarContacto(){
+function IngresarContacto(id,nombres,apellidos,telefono,ubicaciones){
 
-    let nuevoContacto = {NombreApellido: "Manuel Torres"}
+    let nuevo = { 
+        id:id,
+        nombres:nombres,
+        apellidos:apellidos,
+        telefono:telefono,
+        ubicaciones:{ 
+            ciudad:ciudad,
+            direccion: direccion}
+    }
 
-    listaContactos.push(nuevoContacto)
-
-    
+    listaContactos.push(nuevo)
 }
 
 IngresarContacto()
@@ -24,6 +37,8 @@ console.log(listaContactos)
 listaContactos.pop()
 
 console.log(listaContactos)
+
+
 
 
 
